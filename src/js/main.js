@@ -1,7 +1,7 @@
-import menu from './modules/menu';
+import hamburger from './modules/hamburger';
 
 document.addEventListener('DOMContentLoaded', () => {
 'use stricti';
 
-menu();
+hamburger();
 });
