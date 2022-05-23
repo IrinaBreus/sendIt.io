@@ -4,12 +4,25 @@
     line-height: 43px;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+    color: #000;
+    &_big {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    &_white {
+        color: #fff;
+    }
 }
 
 .subtitle {
     font-weight: 700;
     font-size: 36px;
     line-height: 43px;
+    color: #000;
+    &_white {
+        color: #fff;
+    }
 }
 
 @media (max-width: 768px) {
