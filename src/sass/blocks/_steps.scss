@@ -32,8 +32,11 @@
 }
 
 @media (max-width: 992px) {
-    .steps__wrapper {
+    .steps{
+        min-height: 930px;;
+        &__wrapper {
         gap: 30px 100px;
+        }
     }
 }
 
