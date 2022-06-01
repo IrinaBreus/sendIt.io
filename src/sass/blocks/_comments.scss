@@ -159,7 +159,7 @@
         padding: 20px 0 26px 0;
         &__wrapper {
             position: relative;
-            grid-template-columns: 30px auto 30px;
+            grid-template-columns: 15px auto 15px;
             margin-top: 20px;
             overflow: hidden;
         }
@@ -171,7 +171,8 @@
         }
         &-block {
            width: 70vw;
-            justify-self: start;
+           gap: 10px 10px;
+            justify-self: space-around;
             &__descr {
                 .package {
                     font-size: 10px;

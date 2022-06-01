@@ -90,8 +90,8 @@
         background: url('../img/promo/first_tablet.jpg') center right/cover no-repeat;
     
         .menu {
-            grid-template-columns: 100px 1fr;
-            column-gap: 20px;
+            grid-template-columns: 80px 1fr;
+            column-gap: 10px;
             
             &__lists {
                 font-size: 14px;

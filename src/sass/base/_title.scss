@@ -49,9 +49,13 @@
 }
 
 @media (max-width: 576px) {
-    .title_big {
+    .title {
         font-size: 28px;
         line-height: 34px;
+        &_big {
+            font-size: 28px;
+            line-height: 34px;
+        }
     }
     
     .subtitle {

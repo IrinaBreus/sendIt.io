@@ -67,7 +67,7 @@
         min-height: 1250px;
         padding: 28px 0;
         &__wrapper {
-            grid-template: repeat(4, auto) / 280px;
+            grid-template: repeat(4, auto) / auto;
             gap: 40px;
             justify-content: center;
         }
