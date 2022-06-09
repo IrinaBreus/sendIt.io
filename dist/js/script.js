@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nfunction accordeon () {\r\n    const arrow = document.querySelector('.doubts__wrapper');\r\n\r\n    \r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (accordeon);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/accordeon.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction accordeon () {\r\n    const block = document.querySelectorAll('.doubts-block'),\r\n          btns = document.querySelectorAll('.doubts-block__arrow');\r\n\r\n    btns.forEach(btn => {\r\n        btn.addEventListener('click', (e) => {\r\n            e.preventDefault();\r\n            \r\n            btn.classList.toggle('rotateAp');\r\n\r\n            let question = btn.previousElementSibling.lastElementChild;\r\n            question.classList.toggle('show');\r\n            \r\n        })\r\n    })\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (accordeon);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/accordeon.js?");
 
 /***/ }),
 
