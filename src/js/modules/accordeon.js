@@ -1,6 +1,5 @@
 function accordeon () {
-    const block = document.querySelectorAll('.doubts-block'),
-          btns = document.querySelectorAll('.doubts-block__arrow');
+    const btns = document.querySelectorAll('.doubts-block__arrow');
 
     btns.forEach(btn => {
         btn.addEventListener('click', (e) => {

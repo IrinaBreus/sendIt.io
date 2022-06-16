@@ -3,8 +3,8 @@ import accordeon from './modules/accordeon';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-'use stricti';
+    'use stricti';
 
-hamburger();
-accordeon();
+    hamburger();
+    accordeon();
 });
