@@ -1,41 +1,8 @@
-.btn {
-    width: 360px;
-    height: 48px;
-    display: block;
-    background: #008DCD;
-    border-radius: 30px;
-    border: 1px solid #008DCD;
-    font-weight: 700;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    transition: all .7s;
-    &:hover {
-        background: #FFFFFF;
-        border: 3px solid #008DCD;
-        color: #008DCD;
-        transform: translate(2px, 2px);
-    }
-}
 
 @media (max-width: 768px) {
-    .btn {
-        width: 280px;
-        height: 48px;
-        font-size: 16px;
-        line-height: 19px;
-        padding-right: 25px;
-        text-align: end;
-    }
+    
 }
 
 @media (max-width: 576px) {
-    .btn {
-        width: 250px;
-        padding-right: 23px;
-        &_center {
-            text-align: center;
-        }
-    }
+    
 }

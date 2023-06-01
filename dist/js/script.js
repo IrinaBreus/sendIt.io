@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nfunction accordeon () {\r\n    const btns = document.querySelectorAll('.doubts-block__arrow');\r\n\r\n    btns.forEach(btn => {\r\n        btn.addEventListener('click', (e) => {\r\n            e.preventDefault();\r\n            \r\n            btn.classList.toggle('rotateAp');\r\n\r\n            let question = btn.previousElementSibling.lastElementChild;\r\n            question.classList.toggle('show');\r\n            \r\n        })\r\n    })\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (accordeon);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/accordeon.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction accordeon () {\r\n    \r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (accordeon);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/accordeon.js?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction accordeon () {\r\n  
   \*************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nconst hamburger = () => {\r\n    const btnOpen = document.querySelector('.hamburger'),\r\n          btnClose = document.querySelector('.menu-mobile__close'),\r\n          menuBox = document.querySelector('.menu-mobile'),\r\n          menuLists = document.querySelectorAll('.menu-mobile__lists li');\r\n    \r\n    btnOpen.addEventListener('click', () => {\r\n        menuBox.style.top = 0;\r\n    });\r\n\r\n    btnClose.addEventListener('click', () => {\r\n        menuBox.style.top = '';\r\n    });\r\n\r\n    menuLists.forEach(li => {\r\n        li.addEventListener('click', () => {\r\n            menuBox.style.top = '';\r\n        })\r\n    })\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (hamburger);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/hamburger.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst hamburger = () => {\r\n    \r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (hamburger);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/hamburger.js?");
 
 /***/ })
 
