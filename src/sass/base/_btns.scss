@@ -1,8 +1,44 @@
-
+.btn {
+    width: 360px;
+    height: 48px;
+    background: var(--blue);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--white);
+    transition: all .7s;
+    &:hover {
+        transform: translate(2px, 2px);
+        color: var(--blue);
+        background: var(--white);
+    }
+    &:active {
+        box-shadow: inset 2px 2px 10px var(--black);
+    }
+}
 @media (max-width: 768px) {
-    
+    .btn {
+        width: 280px;
+        height: 48px;
+        text-align: right;
+        padding-right: 25px;
+        &:hover {
+            transform: none;
+            color: var(--white);
+            background: var(--blue);
+        }
+        &:active {
+            box-shadow: inset 2px 2px 10px var(--black);
+        }
+    }
 }
 
 @media (max-width: 576px) {
-    
+    .btn {
+        width: 278px;
+    }
 }

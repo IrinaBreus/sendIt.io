@@ -5,6 +5,7 @@
     font-family: 'Myriad Pro', sans-serif;
     color: #000000;
     font-size: 16px;
+    font-weight: 300;
 }
 
 :root {
@@ -13,6 +14,19 @@
     --yellou: #FFCC00;
     --grey: #F7F7F7;
     --blue-light: #D2ECF7;
+    --black: #000000;
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    * {
+        font-size: 12px;
+    }
 }
 
 @import 'base/fonts';

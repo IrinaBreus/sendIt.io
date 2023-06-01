@@ -1,0 +1,21 @@
+.mb-60 {
+    margin-bottom: 60px;
+}
+.mb-44 {
+    margin-bottom: 44px;
+}
+
+@media (max-width: 768px) {
+    .mb-60 {
+        margin-bottom: 38px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mb-60 {
+        margin-bottom: 22px;
+    }
+    .mb-44 {
+        margin-bottom: 18px;
+    }
+}

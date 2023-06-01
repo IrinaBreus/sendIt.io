@@ -1,0 +1,105 @@
+.nav {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 88px;
+    &__logo {
+        width: 160px;
+        img {
+            width: 100%;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        list-style: none;
+        font-size: 18px;
+        line-height: 22px;
+        li {
+            transition: all .7s;
+        }
+        a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        li:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__open {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav {
+        &__logo {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+.nav {
+    margin-bottom: 50px;
+    &__logo {
+        width: 100px;
+    }
+    &__menu {
+        font-size: 14px;
+        line-height: 17px;
+        li {
+            transition: all .7s;
+        }
+        a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        li:hover {
+            transform: none;
+        }
+    }
+}
+}
+
+@media (max-width: 576px) {
+    .nav {
+        position: relative;
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 253px;
+        &__menu {
+            display: none;
+        }
+        &__open {
+            display: block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            cursor: pointer;
+            span {
+                display: block;
+                width: 40px;
+                height: 4px;
+                background: var(--white);
+                &::after, &::before {
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    height: 4px;
+                    background: var(--white);
+                }
+                &::after {
+                    transform: translateY(-14px);
+                }
+                &::before {
+                    transform: translateY(10px);
+                }
+            }
+        }
+    }
+}
