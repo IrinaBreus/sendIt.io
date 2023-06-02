@@ -8,7 +8,12 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 43px;
-    color: var(--white);
+    &_white {
+        color: var(--white);
+    }
+    &_black {
+        color: var(--black);
+    }
 }
 
 @media (max-width: 992px) {

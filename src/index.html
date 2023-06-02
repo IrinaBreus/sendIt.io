@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="header">
+    <header class="header">
         <div class="container">
             <nav class="nav nav_white">
                 <a href="#" class="nav__logo"><img  src="icons/logo.svg" alt="logo"></a>
@@ -46,10 +46,10 @@
                 </div>
             </nav>
             <h1 class="title mb-60">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
-            <h2 class="subtitle mb-44">А посылка доедет сама</h2>
+            <h2 class="subtitle subtitle_white mb-44">А посылка доедет сама</h2>
             <button class="btn">отправить посылку</button>
         </div>
-    </section>
+    </header>
     
     <div class="hamburger">
         <a href="#" class="hamburger__logo"><img  src="icons/footer/logo_footer.svg" alt="logo"></a>
@@ -68,7 +68,23 @@
     </div>
 
     <section class="delivery">
-        
+        <div class="container">
+            <div class="delivery__wrapper">
+                <div class="delivery__img">
+                    <picture>
+                        <source media="(min-width: 576px)" srcset="img/second/box_mini.svg">
+                        <source media="(min-width: 768px)" srcset="img/second/box_tablet.svg">
+                        <img src="img/second/box_big.svg" alt="Компании парнеры">
+                    </picture>
+                </div>
+                <h2 class="subtitle subtitle_black delivery__title">Мы – агрегатор служб доставки</h2>
+                <div class="delivery__descr">
+                    <p class="delivery__txt mb-32">С нами удобно вам, вашим клиентам и курьерским службам. <br>
+                        Для вас наши услуги бесплатны, так как мы получаем бонусы от служб доставок за предоставленный объем заказов, а вы получаете надежный сервис в подарок!</p>
+                    <button class="btn delivery__btn">отправить посылку</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="steps" id="steps">
