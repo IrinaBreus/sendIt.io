@@ -72,9 +72,10 @@
             <div class="delivery__wrapper">
                 <div class="delivery__img">
                     <picture>
-                        <source media="(min-width: 576px)" srcset="img/second/box_mini.svg">
-                        <source media="(min-width: 768px)" srcset="img/second/box_tablet.svg">
-                        <img src="img/second/box_big.svg" alt="Компании парнеры">
+                        <source media="(max-width: 576px)" srcset="img/second/box_mini.svg">
+                        <source media="(max-width: 768px)" srcset="img/second/box_tablet.svg">
+                        <source media="(min-width: 769px)" srcset="img/second/box_big.svg">
+                        <img src="img/second/box_big.svg" alt="Партнеры">
                     </picture>
                 </div>
                 <h2 class="subtitle subtitle_black delivery__title">Мы – агрегатор служб доставки</h2>
@@ -88,7 +89,54 @@
     </section>
 
     <div class="steps" id="steps">
-        
+        <div class="container">
+            <div class="steps__wrapper">
+                <div class="steps__card">
+                    <div class="steps__img">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/steps/one_tablet.svg">
+                            <source media="(min-width: 769px)" srcset="img/steps/one_big.svg">
+                            <img src="img/steps/one_big.svg" alt="Шаг 1">
+                        </picture>
+                    </div>
+                    <h3 class="steps__title">Шаг 1</h3>
+                    <p class="steps__descr">Придумайте что и кому отправить</p>
+                </div>
+                <div class="steps__card">
+                    <div class="steps__img">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/steps/two_tablet.svg">
+                            <source media="(min-width: 769px)" srcset="img/steps/two_big.svg">
+                            <img src="img/steps/two_big.svg" alt="Шаг 1">
+                        </picture>
+                    </div>
+                    <h3 class="steps__title">Шаг 2</h3>
+                    <p class="steps__descr">Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и подтвердит запрос, уточнит все необходимые данные</p>
+                </div>
+                <div class="steps__card">
+                    <div class="steps__img">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/steps/three_tablet.svg">
+                            <source media="(min-width: 769px)" srcset="img/steps/three_big.svg">
+                            <img src="img/steps/three_big.svg" alt="Шаг 1">
+                        </picture>
+                    </div>
+                    <h3 class="steps__title">Шаг 3</h3>
+                    <p class="steps__descr">К Вам приезжает курьер, забирает посылку, Вы подписываете один документ</p>
+                </div>
+                <div class="steps__card">
+                    <div class="steps__img">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/steps/four_tablet.svg">
+                            <source media="(min-width: 769px)" srcset="img/steps/four_big.svg">
+                            <img src="img/steps/four_big.svg" alt="Шаг 1">
+                        </picture>
+                    </div>
+                    <h3 class="steps__title">Шаг 4</h3>
+                    <p class="steps__descr">Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)</p>
+                </div>
+            </div>
+        </div>
     </div>
     
     <section class="feedback">
