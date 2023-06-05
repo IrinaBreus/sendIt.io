@@ -7,10 +7,25 @@
 .mb-32 {
     margin-bottom: 32px;
 }
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.w-100 {
+    width: 100%;
+}
 
 @media (max-width: 768px) {
     .mb-60 {
         margin-bottom: 38px;
+    }
+    .w-100 {
+        width: 100%;
     }
 }
 
@@ -23,5 +38,8 @@
     }
     .mb-32 {
         margin-bottom: 20px;
+    }
+    .w-100 {
+        width: 100%;
     }
 }
