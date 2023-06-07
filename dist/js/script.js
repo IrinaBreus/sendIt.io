@@ -16,7 +16,7 @@
   \************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ \"./src/js/modules/hamburger.js\");\n/* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/accordeon */ \"./src/js/modules/accordeon.js\");\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    'use stricti';\r\n\r\n    (0,_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    (0,_modules_accordeon__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ \"./src/js/modules/hamburger.js\");\n/* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/accordeon */ \"./src/js/modules/accordeon.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    'use stricti';\r\n\r\n    // hamburger();\r\n    // accordeon();\r\n    (0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction accordeon () {\r\n  
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 eval("__webpack_require__.r(__webpack_exports__);\nconst hamburger = () => {\r\n    \r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (hamburger);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/hamburger.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/slider.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/slider.js ***!
+  \**********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\nconst slider = () => {\r\n    const field = document.querySelector('.comments__field'),\r\n          cards = document.querySelectorAll('.comments__card'),\r\n          slides = field.children,\r\n          wrapper = document.querySelector('.comments__inner'),\r\n          prevBtn = document.querySelector('.comments__slider .arrow_prev'),\r\n          nexBtn = document.querySelector('.comments__slider .arrow_next'),\r\n          width = wrapper.getBoundingClientRect(wrapper).width;\r\n    \r\n    let offset = 0;\r\n    resize();\r\n    wrapper.style.overflow = 'hidden';\r\n\r\n\r\n    function resize () {\r\n        if (window.screen.availWidth < 576) {\r\n    \r\n            field.style.width = 100 * slides.length + '%';\r\n            \r\n        } else {\r\n            field.style.width = 100 * (slides.length / 2) + '%';\r\n        }\r\n    }\r\n    window.addEventListener('resize', () => {\r\n        resize();\r\n    })\r\n\r\n    \r\n    cards.forEach(slide => slide.style.width = width);\r\n    \r\n    nexBtn.addEventListener('click', () => {\r\n        next();\r\n    });\r\n\r\n    prevBtn.addEventListener('click', () => {\r\n        prev();\r\n    });\r\n\r\n    function next() {\r\n        offset += parseFloat(width) /2 ;\r\n        field.style.transform = `translateX(-${offset}px)`;\r\n        field.appendChild(slides[0]);\r\n    }\r\n\r\n    function prev() {\r\n        offset -= parseFloat(width) / 2;\r\n        field.style.transform = `translateX(-${offset}px)`;\r\n        const active = slides[slides.length - 1];\r\n            \r\n        field.insertBefore(active, slides[0]);\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (slider);\r\n\r\n\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/slider.js?");
 
 /***/ })
 
