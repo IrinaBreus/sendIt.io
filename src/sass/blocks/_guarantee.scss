@@ -1,17 +1,186 @@
-
-
-@media (max-width: 1200px) {
-    
+.guarantee {
+    padding: 80px 0 64px 0;
+    &__title {
+        margin-bottom: 42px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 0 1fr 0;
+    }
+    &__block {
+        display: grid;
+        grid-template: min-content max-content 1fr min-content / repeat(6, 1fr);
+        gap: 10px 40px;
+        &-img {
+            width: 100%;
+            margin-bottom: 22px;
+            img {
+                width: 100%;
+            }
+            &_1 {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            &_2 {
+                grid-area: 1 / 3 / 2 / 4;
+            }
+            &_3 {
+                grid-area: 1 / 5 / 2 / 6;
+            }
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            &_1 {
+                grid-area: 2 / 1 / 3 / 3;
+            }
+            &_2 {
+                grid-area: 2 / 3 / 3 / 5;
+            }
+            &_3 {
+                grid-area: 2 / 5 / 3 / 7;
+            }
+        }
+        &-descr {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 10px;
+            &_1 {
+                grid-area: 3 / 1 / 4 / 3;
+            }
+            &_2 {
+                grid-area: 3 / 3 / 4 / 5;
+            }
+            &_3 {
+                grid-area: 3 / 5 / 4 / 7;
+            }
+            
+        }
+        &-btn {
+            width: 100%;
+            &_1 {
+                grid-area: 4 / 1 / 5 / 3;
+            }
+            &_2 {
+                grid-area: 4 / 3 / 5 / 5;
+            }
+            &_3 {
+                grid-area: 4 / 5 / 5 / 7;
+            }
+            
+        }
+    }
+    .arrow {
+        width: 0;
+    }
+    .mobile {
+        display: none;
+    }
 }
 
-@media (max-width: 992px) {
-    
+@media (max-width: 1200px) {
+    .guarantee {
+        &__block {
+            &-img {
+                width: 100%;
+                margin-bottom: 12px;
+            }
+            &-title {
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 32px;
+            }
+            &-descr {
+                font-size: 15px;
+                line-height: 19px;
+                margin-bottom: 10px;
+                
+            }
+            &-btn {
+                width: 100%;                
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
-    
+    .guarantee {
+        padding: 44px 0;
+        &__title {
+            margin-bottom: 18px;
+        }
+        &__block {
+            gap: 10px 20px;
+            &-img {
+                margin-bottom: 8px;
+            }
+            &-title {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &-descr {
+                font-size: 12px;
+                line-height: 14px;
+            }
+            &-btn {
+                width: 100%; 
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
-    
+    .guarantee {
+        padding: 27px 0 20px 0;
+        &__title {
+            margin-bottom: 18px;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr 10fr 1fr;
+            position: relative;
+        }
+        &__block {
+            display: flex;
+            gap: 0;
+        }
+        &__box {
+            display: grid;
+            grid-template: repeat(3, min-content) / 3fr 7fr;
+            align-items: center;
+            gap: 14px 10px;
+            &-img {
+                width: 100%;
+                margin-bottom: 0;
+                grid-area: 1 / 1 / 2 / 2;
+                img {
+                    width: 100%;
+                }
+            }
+            &-title {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                grid-area: 1 / 2 / 2 / 3;
+            }
+            &-descr {
+                font-size: 12px;
+                line-height: 14px;
+                grid-area: 2 / 1 / 3 / 3;
+            }
+            &-btn {
+                width: 100%;
+                grid-area: 3 / 1 / 4 / 3;
+            }
+        }
+        .arrow {
+            width: 13px;
+            margin-top: 24px;
+        }
+        .mobile {
+            display: block;
+        }
+        .desctop {
+            display: none;
+        }
+    }
 }
