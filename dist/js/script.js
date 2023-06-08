@@ -16,7 +16,7 @@
   \************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ \"./src/js/modules/hamburger.js\");\n/* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/accordeon */ \"./src/js/modules/accordeon.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    'use stricti';\r\n\r\n    // hamburger();\r\n    // accordeon();\r\n    (0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ \"./src/js/modules/hamburger.js\");\n/* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/accordeon */ \"./src/js/modules/accordeon.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    'use stricti';\r\n\r\n    // hamburger();\r\n    (0,_modules_accordeon__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n    (0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nfunction accordeon () {\r\n    \r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (accordeon);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/accordeon.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction accordeon () {\r\n    const btns = document.querySelectorAll('.doubts__down');\r\n\r\n    btns.forEach(btn => {\r\n        btn.addEventListener('click', function(e) {\r\n            const target = e.currentTarget;\r\n            if (target.classList.contains('down_active')) {\r\n                hidden();\r\n            } else {\r\n                hidden();\r\n                target.classList.add('down_active');\r\n                target.nextElementSibling.classList.add('answer_active');\r\n            }\r\n        })\r\n    });\r\n\r\n    function hidden() {\r\n        btns.forEach(btn => {\r\n            btn.classList.remove('down_active');\r\n            btn.nextElementSibling.classList.remove('answer_active');\r\n        })\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (accordeon);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/accordeon.js?");
 
 /***/ }),
 

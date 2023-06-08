@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'use stricti';
 
     // hamburger();
-    // accordeon();
+    accordeon();
     slider();
 });
