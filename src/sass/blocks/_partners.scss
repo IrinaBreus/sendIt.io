@@ -4,15 +4,24 @@
         display: grid; 
         grid-template-columns: repeat(8, 1fr);
         gap: 40px;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         img {
-            width: 100%;
+            max-width: 94px;
         }
     } 
 }
 
-
+@media (max-width: 1140px) {
+    .partners {
+        &__wrapper {
+            gap: 30px;
+            img {
+                max-width: 100%;
+            }
+        } 
+    }
+}
 @media (max-width: 992px) {
     .partners__wrapper {
         gap: 20px;
@@ -24,8 +33,7 @@
         padding: 22px 0 38px 0;
         &__wrapper {
             grid-template-columns: repeat(4, 66px);
-            gap: 20px;
-            justify-content: center;
+            gap: 40px;
         } 
     }
 }
@@ -35,6 +43,7 @@
         padding: 16px 0 18px 0;
         &__wrapper {
             grid-template-columns: repeat(3, 66px);
+            gap: 20px;
         } 
     }
 }
