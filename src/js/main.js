@@ -6,7 +6,7 @@ import slider from './modules/slider';
 document.addEventListener('DOMContentLoaded', () => {
     'use stricti';
 
-    // hamburger();
+    hamburger();
     accordeon();
     slider();
 });

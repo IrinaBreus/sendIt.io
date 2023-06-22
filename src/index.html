@@ -34,12 +34,12 @@
                 <a href="#" class="nav__logo"><img  src="icons/logo.svg" alt="logo"></a>
                 <ul class="nav__menu">
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">Описание</a></li>
-                    <li><a href="#">Преимущества</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Партнёры</a></li>
-                    <li><a href="#">Гарантии</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#about">Описание</a></li>
+                    <li><a href="#advantage">Преимущества</a></li>
+                    <li><a href="#comments">Отзывы</a></li>
+                    <li><a href="#partners">Партнёры</a></li>
+                    <li><a href="#guarantee">Гарантии</a></li>
+                    <li><a href="#steps">FAQ</a></li>
                 </ul>
                 <div class="nav__open">
                     <span></span>
@@ -53,21 +53,47 @@
     
     <div class="hamburger">
         <a href="#" class="hamburger__logo"><img  src="icons/footer/logo_footer.svg" alt="logo"></a>
+        <div class="hamburger__close">&times;</div>
         <ul class="hamburger__menu">
             <li><a href="#">Главная</a></li>
-            <li><a href="#">Описание</a></li>
-            <li><a href="#">Преимущества</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Партнёры</a></li>
-            <li><a href="#">Гарантии</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#about">Описание</a></li>
+            <li><a href="#advantage">Преимущества</a></li>
+            <li><a href="#comments">Отзывы</a></li>
+            <li><a href="#partners">Партнёры</a></li>
+            <li><a href="#guarantee">Гарантии</a></li>
+            <li><a href="#steps">FAQ</a></li>
         </ul>
-        <div class="hamburger__close">
-            <span></span>
+        <div class="questions__wrapper">
+            <h3 class="questions__title">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+            <form class="questions__form">
+                <input 
+                    type="tel" 
+                    placeholder="Ваш телефон"
+                    class="input input_grey"/>
+                <button type="submit" class="btn w-100">заказать звонок</button>
+                <label class="label label_grey questions__label">
+                    <input 
+                        type="checkbox" 
+                        name="consent" 
+                        class="checkbox checkbox_grey">
+                    Я согласен на обработку персональных данных 
+                </label>
+            </form>
+        </div>
+        <div class="hamburger__icons">
+            <a href="#">
+                <img src="icons/footer/wk.svg" alt="wk">
+            </a>
+            <a href="#">
+                <img src="icons/footer/instagram.svg" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="icons/footer/facebook.svg" alt="facebook">
+            </a>
         </div>
     </div>
 
-    <section class="delivery">
+    <section class="delivery" id="about">
         <div class="container">
             <div class="delivery__wrapper">
                 <div class="delivery__img">

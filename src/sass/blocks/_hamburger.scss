@@ -1,3 +1,46 @@
 .hamburger {
-    display: none;
+    background-color: var(--white);
+    position: absolute;
+    padding: 13px 25px 28px 25px;
+    top: -150%;
+    opacity: 0;
+    overflow-y: auto;
+    width: 100%;
+    transition: all .7s;
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__close {
+        position: absolute;
+        top: 13px;
+        right: 25px;
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    &__menu {
+        list-style-type: none;
+        li {
+            margin-bottom: 20px;
+            behavior: smooth;
+            a {
+                font-size: 18px;
+                text-decoration: none;
+            }
+        }
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 24px;
+        a {
+            display: inline-block;
+            width: 38px;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
