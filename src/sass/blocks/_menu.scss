@@ -27,6 +27,11 @@
         li:hover {
             transform: scale(1.2);
         }
+        &_grey {
+            a {
+                color: var(--black);
+            }
+        }
     }
     &__open {
         display: none;
@@ -54,7 +59,6 @@
             transition: all .7s;
         }
         a {
-            color: var(--white);
             text-decoration: none;
         }
         li:hover {
@@ -100,6 +104,17 @@
                 }
                 &::before {
                     transform: translateY(24px);
+                }
+            }
+            &_grey {
+                span {
+                    position: absolute;
+                    top: 34px;
+                    background: var(--black);
+                    &::after, &::before {
+                        content: '';
+                        background: var(--black);
+                    }
                 }
             }
         }
