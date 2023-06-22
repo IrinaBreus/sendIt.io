@@ -16,7 +16,7 @@
   \************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ \"./src/js/modules/hamburger.js\");\n/* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/accordeon */ \"./src/js/modules/accordeon.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    'use stricti';\r\n\r\n    (0,_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    (0,_modules_accordeon__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n    (0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hamburger */ \"./src/js/modules/hamburger.js\");\n/* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/accordeon */ \"./src/js/modules/accordeon.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\n/* harmony import */ var _modules_scrollSmooth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scrollSmooth */ \"./src/js/modules/scrollSmooth.js\");\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n    'use stricti';\r\n\r\n    (0,_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    (0,_modules_accordeon__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n    (0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n    (0,_modules_scrollSmooth__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction accordeon () {\r\n  
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 eval("__webpack_require__.r(__webpack_exports__);\nconst hamburger = () => {\r\n    const trigger = document.querySelector('.nav__open'),\r\n          hamburger = document.querySelector('.hamburger'),\r\n          close = document.querySelector('.hamburger__close'),\r\n          lists = document.querySelectorAll('.hamburger__menu li');\r\n\r\n    trigger.addEventListener('click', () => {\r\n        hamburger.style.top = 0;\r\n        hamburger.style.opacity = 1;\r\n    });\r\n    close.addEventListener('click', closeHumburger);\r\n\r\n    lists.forEach(list => {\r\n        list.addEventListener('click', closeHumburger);\r\n    })\r\n\r\n    function closeHumburger() {\r\n        hamburger.style.top = -150 + '%';\r\n        hamburger.style.opacity = 0;\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (hamburger);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/hamburger.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/scrollSmooth.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/scrollSmooth.js ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\nconst scrollSmooth = () => {\r\n    const links = document.querySelectorAll('[href^=\"#\"]'),\r\n           up = document.querySelector('.up');\r\n\r\n    links.forEach(link => {\r\n        link.addEventListener('click', function(e) {\r\n            e.preventDefault();\r\n            if (this.hash) {\r\n                const el = document.querySelector(this.hash);\r\n                const rect = el.getBoundingClientRect();\r\n                window.scrollTo({\r\n                    left: window.scrollX + rect.left,\r\n                    top: window.scrollY + rect.top,\r\n                    behavior: \"smooth\"\r\n                });\r\n            } else {\r\n                window.scrollTo({\r\n                    left: 0,\r\n                    top: 0,\r\n                    behavior: \"smooth\"\r\n                });\r\n            }\r\n            console.log(this.hash);\r\n        })\r\n    });\r\n\r\n    window.addEventListener('scroll', () => {\r\n        if (document.documentElement.scrollTop > 1700) {\r\n            up.style.cssText = `opacity: 1;\r\n                                cursor: pointer;`\r\n        } else {\r\n            up.style.cssText = `opacity: 0;\r\n                                cursor: none;`\r\n        }\r\n    })\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (scrollSmooth);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/scrollSmooth.js?");
 
 /***/ }),
 
