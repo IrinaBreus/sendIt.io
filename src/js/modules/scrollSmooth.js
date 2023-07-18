@@ -20,7 +20,6 @@ const scrollSmooth = () => {
                     behavior: "smooth"
                 });
             }
-            console.log(this.hash);
         })
     });
 

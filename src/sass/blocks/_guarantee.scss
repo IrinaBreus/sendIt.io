@@ -146,11 +146,16 @@
             grid-template-columns: 1fr 10fr 1fr;
             position: relative;
         }
+        &__field {
+            width: 100%;
+            overflow: hidden;
+        }
         &__block {
+            width: 300%;
             display: flex;
-            gap: 0;
         }
         &__box {
+            width: 100%;
             display: grid;
             grid-template: repeat(3, min-content) / 3fr 7fr;
             align-items: center;
@@ -184,7 +189,7 @@
             margin-top: 24px;
         }
         .mobile {
-            display: block;
+            display: flex;
         }
         .desctop {
             display: none;
