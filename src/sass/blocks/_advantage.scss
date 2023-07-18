@@ -16,8 +16,12 @@
     &__img {
         width: 100%;
         margin-bottom: 34px;
+        transition: all .8s;
         img {
             width: 100%;
+        }
+        &:hover {
+            transform: translateY(10px);
         }
     }
     &__descr {
@@ -63,6 +67,9 @@
         }
         &__img {
             margin-bottom: 16px;
+            &:hover {
+                transform: none;
+            }
         }
         &__descr {
             font-size: 12px;

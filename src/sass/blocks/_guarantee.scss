@@ -14,6 +14,7 @@
         &-img {
             width: 100%;
             margin-bottom: 22px;
+            transition: all .8s;
             img {
                 width: 100%;
             }
@@ -25,6 +26,9 @@
             }
             &_3 {
                 grid-area: 1 / 5 / 2 / 6;
+            }
+            &:hover {
+                transform: translateY(10px);
             }
         }
         &-title {
@@ -113,6 +117,9 @@
             gap: 10px 20px;
             &-img {
                 margin-bottom: 8px;
+                &:hover {
+                    transform: none;
+                }
             }
             &-title {
                 font-size: 16px;

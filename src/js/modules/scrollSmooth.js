@@ -25,7 +25,7 @@ const scrollSmooth = () => {
     });
 
     window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop > 1700) {
+        if (document.documentElement.scrollTop > 1000) {
             up.style.cssText = `opacity: 1;
                                 cursor: pointer;`
         } else {
